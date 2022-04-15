@@ -1,0 +1,19 @@
+$letra_imprenta: 'Bebas Neue', cursive;
+$letra_cursiva: 'MonteCarlo', cursive;
+
+@mixin contenido_flex{
+    display: flex;
+    align-items: center; 
+}
+@mixin frases ($ff, $fs){
+    font-family: $ff;
+    font-size: $fs;
+}
+
+$titulares: (
+    ct : #904000,
+    cs : black,
+);
+
+$ct: map-get($titulares, ct);
+$cs: map-get($titulares, cs);

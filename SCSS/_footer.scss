@@ -1,0 +1,66 @@
+footer{
+    h3{
+        font-family: $letra_imprenta;
+        color: black;
+        font-size: 1rem;
+    }
+}
+
+.father{
+    margin: 20px;
+    margin-top: 80px;
+    padding: 15px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5fr;
+    grid-template-areas: 
+        "contact redes mailing"; 
+        .redes{
+            .rimg{
+                @include contenido_flex;
+                margin-top: 25px;
+                .fimg{
+                    width: 30px;
+                    margin-left: 130px;
+                }
+                .iimg{
+                    width: 30px;
+                    margin-left: 35px;
+                }
+                .timg{
+                    width: 30px;
+                    margin-left: 35px;
+                }
+            }
+        } 
+}
+.contact{
+    grid-area: contact;
+}
+.redes{
+    grid-area: redes;
+}
+.mailing{
+    grid-area: mailing;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer{
+    .wapp{
+        @include contenido_flex;
+        justify-content: right;
+        img{
+            width: 25px;
+        } 
+    }
+    .insta{
+        @include contenido_flex;
+        justify-content: left;
+        img{
+            width: 25px;
+            margin-left: 10px;
+        }
+    }
+}

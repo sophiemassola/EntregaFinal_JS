@@ -1,0 +1,16 @@
+.boton{
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5
+    }
+}

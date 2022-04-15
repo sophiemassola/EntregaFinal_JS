@@ -1,0 +1,178 @@
+.boton {
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.5; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: whitesmoke;
+  color: #904000; }
+
+.COLOR {
+  background-color: whitesmoke;
+  margin-bottom: 0px; }
+
+.logo {
+  width: 170px; }
+
+.mr {
+  margin-right: 60px; }
+
+li a:hover {
+  font-weight: bold; }
+
+.lmenu {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.4rem; }
+
+.lmenud {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.1rem; }
+
+.titulo {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px; }
+
+.frase1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem; }
+
+.alto {
+  height: 600px; }
+
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.title, .title2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.2rem;
+  color: #904000; }
+
+.subtitle {
+  font-family: "MonteCarlo", cursive;
+  font-size: 1.6rem;
+  color: black; }
+
+.title2 {
+  color: black; }
+
+.lbotones {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1rem; }
+
+.exp {
+  font-family: "MonteCarlo", cursive;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold; }
+
+.padre {
+  display: flex;
+  align-items: center; }
+
+.mrb {
+  margin-bottom: 30px; }
+
+.titlef {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.4rem;
+  color: #904000; }
+
+.subtitlef {
+  font-family: "MonteCarlo", cursive;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold; }
+
+@media screen and (max-width: 750px) {
+  .alto {
+    height: 300px; }
+  .bb {
+    display: none; }
+  .lmenu1 {
+    margin-left: 0px; }
+  .COLOR {
+    margin-bottom: 40px; }
+  .mrb {
+    margin-bottom: 100px; }
+  footer .father {
+    display: none; }
+  .footer {
+    padding: 20px;
+    background-color: gray; } }
+
+@media screen and (min-width: 950px) {
+  .footer {
+    display: none; }
+  .titulo {
+    visibility: hidden; } }
+
+footer h3 {
+  font-family: "Bebas Neue", cursive;
+  color: black;
+  font-size: 1rem; }
+
+.father {
+  margin: 20px;
+  margin-top: 80px;
+  padding: 15px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5fr;
+  grid-template-areas: "contact redes mailing"; }
+  .father .redes .rimg {
+    display: flex;
+    align-items: center;
+    margin-top: 25px; }
+    .father .redes .rimg .fimg {
+      width: 30px;
+      margin-left: 130px; }
+    .father .redes .rimg .iimg {
+      width: 30px;
+      margin-left: 35px; }
+    .father .redes .rimg .timg {
+      width: 30px;
+      margin-left: 35px; }
+
+.contact {
+  grid-area: contact; }
+
+.redes {
+  grid-area: redes; }
+
+.mailing {
+  grid-area: mailing;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.footer .wapp {
+  display: flex;
+  align-items: center;
+  justify-content: right; }
+  .footer .wapp img {
+    width: 25px; }
+
+.footer .insta {
+  display: flex;
+  align-items: center;
+  justify-content: left; }
+  .footer .insta img {
+    width: 25px;
+    margin-left: 10px; }

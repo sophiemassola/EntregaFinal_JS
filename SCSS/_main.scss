@@ -1,0 +1,51 @@
+.titulo{
+    @include frases($letra_imprenta, 2rem);
+    text-align: center;
+    margin-bottom: 60px;
+}
+.frase1{
+    @include frases($letra_imprenta, 4rem)
+}
+.alto{
+    height: 600px;
+}
+.video{
+    @include contenido_flex;
+    justify-content: center;
+}
+.title{
+    @include frases($letra_imprenta,1.2rem);
+    color: $ct;
+}
+.subtitle{
+    @include frases($letra_cursiva,1.6rem);
+    color: $cs;
+}
+.title2{
+    @extend .title;
+    color: black;
+}
+.lbotones{
+    @include frases($letra_imprenta,1rem)
+}
+.exp{
+    @include frases($letra_cursiva, 1.2rem);
+    color: black;
+    font-weight: bold;
+}
+.padre{
+    @include contenido_flex;
+
+}
+.mrb{
+    margin-bottom: 30px;
+}
+.titlef{
+    @include frases($letra_imprenta,1.4rem);
+    color: $ct;
+}
+.subtitlef{
+    @include frases($letra_cursiva,1.2rem);
+    color: $cs;
+    font-weight: bold;
+}
